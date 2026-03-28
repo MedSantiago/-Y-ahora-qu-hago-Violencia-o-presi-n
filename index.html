@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Violencia o presión | ¿Y ahora qué hago?</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+</head>
+<body>
+  <header class="topbar">
+    <a href="../index.html" class="back-link">
+      <i class="fa-solid fa-arrow-left"></i> Volver al inicio
+    </a>
+    <div class="topbar-title">2.5 Violencia o presión</div>
+  </header>
+
+  <main class="page">
+    <section class="hero-section">
+      <div class="hero-text">
+        <span class="tag danger-tag">Protección y apoyo</span>
+        <h1>Violencia o presión</h1>
+        <p>
+          Esta sección es para quien sufrió abuso, presión de la pareja,
+          manipulación, amenazas o vulneración de derechos. Si algo de eso está
+          pasando, es grave. No es exageración. Y no es tu culpa.
+        </p>
+
+        <div class="decision-box">
+          <p class="decision-title">¿Qué necesitas ahora?</p>
+          <div class="decision-buttons">
+            <button class="decision-btn urgent-btn" data-target="ayuda-inmediata">
+              Necesito ayuda inmediata
+            </button>
+            <button class="decision-btn" data-target="ruta-emergencia">
+              Ver ruta rápida
+            </button>
+            <button class="decision-btn" data-target="decision-guiada">
+              No sé qué necesito
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="progress-card">
+          <p class="progress-label">Tu avance en esta guía</p>
+          <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+          </div>
+          <p class="progress-text" id="progressText">0% completado</p>
+        </div>
+
+        <div class="hero-support-box">
+          <i class="fa-solid fa-shield-heart"></i>
+          <h3>No es tu culpa</h3>
+          <p>
+            Si alguien te presiona, amenaza, manipula, toca sin consentimiento o
+            intenta controlar tus decisiones, eso no está bien. Mereces protección,
+            apoyo y atención.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-grid">
+      <section class="panel panel-main">
+        <div class="panel-header">
+          <span class="panel-step danger-step">Paso 1</span>
+          <h2>¿Qué situaciones entran aquí?</h2>
+        </div>
+
+        <p class="panel-text">
+          Violencia o presión no es solo una agresión física. También incluye
+          control, amenazas, presión para tener relaciones, presión para ocultar
+          o continuar algo que no quieres, chantaje, miedo y vulneración de tus derechos.
+        </p>
+
+        <div class="signals-grid">
+          <article class="signal-card danger">
+            <i class="fa-solid fa-hand"></i>
+            <h3>Presión o amenaza</h3>
+            <p>Si te obligan, manipulan o asustan para decidir algo.</p>
+          </article>
+
+          <article class="signal-card danger">
+            <i class="fa-solid fa-user-slash"></i>
+            <h3>Aislamiento</h3>
+            <p>Si intentan apartarte de tu familia, amistades o apoyo.</p>
+          </article>
+
+          <article class="signal-card danger">
+            <i class="fa-solid fa-lock"></i>
+            <h3>Control</h3>
+            <p>Si controlan tu cuerpo, tus decisiones o tu acceso a ayuda.</p>
+          </article>
+
+          <article class="signal-card danger">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            <h3>Abuso o agresión</h3>
+            <p>Si hubo violencia física, sexual o emocional.</p>
+          </article>
+        </div>
+      </section>
+
+      <aside class="panel panel-side" id="ayuda-inmediata">
+        <div class="panel-header">
+          <span class="panel-step danger-step">Paso 2</span>
+          <h2>Haz esto ahora</h2>
+        </div>
+
+        <div class="action-cards">
+          <article class="action-card">
+            <h3>1. Busca una persona segura</h3>
+            <p>Alguien confiable con quien puedas hablar o estar acompañada.</p>
+          </article>
+
+          <article class="action-card">
+            <h3>2. Sal de la situación si puedes</h3>
+            <p>Si estás en riesgo inmediato, prioriza alejarte y pedir ayuda.</p>
+          </article>
+
+          <article class="action-card">
+            <h3>3. Busca atención y protección</h3>
+            <p>No cargues sola con esto. Mereces apoyo real.</p>
+          </article>
+        </div>
+
+        <button class="emergency-button" id="emergencyButton" type="button">
+          <i class="fa-solid fa-phone-volume"></i>
+          Necesito protección ya
+        </button>
+
+        <div id="emergencyFeedback" class="result-box hidden"></div>
+      </aside>
+    </section>
+
+    <section class="panel separate-section">
+      <div class="panel-header">
+        <span class="panel-step danger-step">Actividad 1</span>
+        <h2>Mensaje de apoyo visual</h2>
+      </div>
+
+      <div class="support-visual">
+        <div class="support-icon">
+          <i class="fa-solid fa-shield"></i>
+        </div>
+        <div class="support-message">
+          <h3>No estás exagerando</h3>
+          <p>
+            Si algo te hace sentir miedo, presión o vulnerabilidad, merece atención.
+            Tu bienestar y tu seguridad importan.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel separate-section" id="ruta-emergencia">
+      <div class="panel-header">
+        <span class="panel-step danger-step">Actividad 2</span>
+        <h2>Ruta rápida de emergencia</h2>
+      </div>
+
+      <p class="panel-text">
+        Haz clic en cada paso para ver qué hacer sin dar vueltas.
+      </p>
+
+      <div class="fast-route">
+        <button class="route-step active" data-route="0" type="button">1. Reconozco el riesgo</button>
+        <button class="route-step" data-route="1" type="button">2. Busco protección</button>
+        <button class="route-step" data-route="2" type="button">3. Pido ayuda</button>
+        <button class="route-step" data-route="3" type="button">4. Continuo la ruta</button>
+      </div>
+
+      <div class="route-content" id="routeContent">
+        <h3>Reconozco el riesgo</h3>
+        <p>
+          Si hay miedo, amenaza, presión o abuso, no lo minimices. Identificarlo es el primer paso para protegerte.
+        </p>
+      </div>
+    </section>
+
+    <section class="panel separate-section">
+      <div class="panel-header">
+        <span class="panel-step danger-step">Actividad 3</span>
+        <h2>Tarjetas con “haz esto ahora”</h2>
+      </div>
+
+      <p class="panel-text">
+        Haz clic en cada tarjeta para ver una acción concreta.
+      </p>
+
+      <div class="click-cards">
+        <article class="click-card" data-card="0">
+          <i class="fa-solid fa-person-circle-check"></i>
+          <h3>Busca apoyo seguro</h3>
+          <p>Haz clic para ver</p>
+        </article>
+
+        <article class="click-card" data-card="1">
+          <i class="fa-solid fa-door-open"></i>
+          <h3>Sal del riesgo si puedes</h3>
+          <p>Haz clic para ver</p>
+        </article>
+
+        <article class="click-card" data-card="2">
+          <i class="fa-solid fa-file-shield"></i>
+          <h3>Protege tu integridad</h3>
+          <p>Haz clic para ver</p>
+        </article>
+
+        <article class="click-card" data-card="3">
+          <i class="fa-solid fa-hand-holding-heart"></i>
+          <h3>Pide orientación</h3>
+          <p>Haz clic para ver</p>
+        </article>
+      </div>
+
+      <div class="card-detail" id="cardDetail">
+        <h3>Selecciona una tarjeta</h3>
+        <p>Aquí aparecerá la acción concreta recomendada.</p>
+      </div>
+    </section>
+
+    <section class="panel separate-section" id="decision-guiada">
+      <div class="panel-header">
+        <span class="panel-step danger-step">Actividad 4</span>
+        <h2>Decisión guiada</h2>
+      </div>
+
+      <p class="panel-text">
+        Elige la opción que más se parezca a lo que necesitas en este momento.
+      </p>
+
+      <div class="guided-choice-grid">
+        <button class="guided-choice-btn" data-choice="proteccion" type="button">
+          Necesito protección
+        </button>
+        <button class="guided-choice-btn" data-choice="orientacion" type="button">
+          Necesito orientación
+        </button>
+        <button class="guided-choice-btn" data-choice="apoyo" type="button">
+          Necesito apoyo emocional o acompañamiento
+        </button>
+        <button class="guided-choice-btn" data-choice="salir" type="button">
+          Necesito salir de una situación de riesgo
+        </button>
+      </div>
+
+      <div class="guided-choice-result" id="guidedChoiceResult">
+        <h3>Selecciona una opción</h3>
+        <p>Aquí te mostraremos la orientación más directa según lo que necesitas.</p>
+      </div>
+    </section>
+
+    <section class="panel separate-section">
+      <div class="panel-header">
+        <span class="panel-step danger-step">Actividad 5</span>
+        <h2>Toma de decisiones</h2>
+      </div>
+
+      <p class="panel-text">
+        Lee el caso y elige la respuesta que más protege.
+      </p>
+
+      <div class="decision-scenarios">
+        <article class="scenario-card">
+          <h3>Escenario 1</h3>
+          <p>
+            Tu pareja te amenaza para que no busques ayuda ni cuentes lo que está pasando.
+          </p>
+          <div class="scenario-buttons">
+            <button class="scenario-btn" data-scenario="1" data-choice="incorrecto">
+              Guardarlo sola y obedecer
+            </button>
+            <button class="scenario-btn" data-scenario="1" data-choice="correcto">
+              Buscar una persona segura y protección
+            </button>
+          </div>
+          <div class="scenario-feedback" id="scenarioFeedback1"></div>
+        </article>
+
+        <article class="scenario-card">
+          <h3>Escenario 2</h3>
+          <p>
+            Te sientes presionada, confundida y con miedo, pero dudas si “es para tanto”.
+          </p>
+          <div class="scenario-buttons">
+            <button class="scenario-btn" data-scenario="2" data-choice="correcto">
+              Reconocerlo como algo grave y pedir ayuda
+            </button>
+            <button class="scenario-btn" data-scenario="2" data-choice="incorrecto">
+              Restarle importancia y esperar
+            </button>
+          </div>
+          <div class="scenario-feedback" id="scenarioFeedback2"></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel final-step separate-section">
+      <div class="panel-header">
+        <span class="panel-step danger-step">Paso final</span>
+        <h2>Acción concreta</h2>
+      </div>
+
+      <div class="final-card">
+        <h3>Tu seguridad va primero</h3>
+        <p>
+          Esta página busca llevarte directamente a una ruta de protección y apoyo.
+          Si hay abuso, presión o vulneración de derechos, no mereces silencio:
+          mereces ayuda.
+        </p>
+
+        <div class="route-buttons">
+          <a href="#" class="secondary-btn danger-secondary">Buscar ayuda inmediata</a>
+          <a href="../no-se-que-hacer.html" class="secondary-btn">No sé qué hacer</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
